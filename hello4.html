@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>천빌라</title>
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<style>
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#scale{transform: scale(1.0);}
+#scale:hover{transform: scale(1.5);}
+
+.wrap{width: 1000px; margin:auto;}
+	html{font-family: 'Noto Serif KR', serif; scroll-behavior: smooth;}
+		body, header, html,section {margin:0;}
+		.flex {display: flex;}
+		.bg-blue{background-color: blue;}
+		.bg-red{background-color: red;}
+		.bg-yellow{background-color: yellow;}
+		.bg-gray{background-color: gray}
+		.bg-black{background-color: black;}
+		.col-1{height: 700px; margin: 0px 0px;}
+		.col-2{height: 240px; width: 1000px; margin: 235px 235px;}
+		.col-3{height: 240px; width: 1000px; margin: -167px 360px;}
+		.col-4{height: 250px; width: 800px;margin: 0px 250px;}
+		.col-5{height: 1000px; margin: -300px 0px;}
+		.col-6{height: 620px; width: 500px; margin: 250px 250px;}
+		.col-7{height: 300px; width: 380px; margin: -100px -150px;}
+		.col-8{height: 200px; width: 160px; margin: 0px 0px;}
+		.col-9{height: 200px; width: 160px; margin: 0px 0px;}
+		.col-10{height: 130px; width: 280px; margin: -100px -250px; margin-top: 500px; z-index: 0; display: inline-block;}
+		.col-11{height: 300px; width: 300px; margin: 0px -60px; z-index: 1; display: block;}
+		.col-12{height: 130px; width: 280px; margin: 100px -50px;}
+		.col-13{height: 180px; margin: 0px 0px;}
+
+		.col-14{height: 1100px; width: 1000px; margin: 0px 0px;}
+		.col-14{height: 800px; width: 700px; margin: 0px 0px;}
+		.col-15{height: 5100px; width: 700px; margin: 0px 0px;}
+		.col-16{height: 145px; margin: 0px 0px;}
+		.col-17{height: 200px; margin: 0px 0px;}
+		.col-18{height: 1000px; width: 1000px; margin: 0px 0px;}
+		.col-19{height: 300px; width: 800px; margin: 0px 0px;}
+		.col-20{height: 570px; width: 460px; margin: 0px 0px;}
+		.col-21{height: 1800px; margin: 0px 0px;}
+		.col-22{height: 350px; width: 480px; margin: 0px 0px;}
+		.col-23{height: 100px; width: 480px; margin: 0px 0px;}
+		.col-24{height: 300px; width: 480px; margin: 0px 0px;}
+		.col-25{height: 800px; margin: 0px 0px;}
+		.col-26{height: 120px; margin: 700px 0px;}
+		.col-27{height: 620px; width: 500px; margin: -950px 800px;}
+		.col-28{height: 300px; width: 380px; margin: 240px 600px;}
+		.col-29{height: 120px; width: 480px; margin: 550px 0px; margin-left: 810px;}
+		.col-30{height: 3050px; margin: 0px 0px;}
+		.col-31{height: 200px; width: 160px; margin: 400px 800px;}
+		.col-32{height: 130px; width: 280px; margin: 0px -540px; }
+		.col-33{height: 300px; width: 300px; margin: -100px -600px;}
+		.col-34{height: 130px; width: 280px; margin: 200px -600px;}
+		.col-35{height: 120px; width:160px; margin: -900px 650px;}
+		.col-36{height: 300px; width: 300px; margin: 50px 1050px;}
+		.col-37{height: 130px; width: 280px; margin:100px 1050px;}
+		.col-38{height: 400px; width: 400px; margin: 50px 0px;}
+		.col-39{height: 140px; width: 160px; margin-top: 500px; margin-left: 850px;}
+		.col-40{height: 140px; width: 160px; margin: -580px -200px;}
+		.col-41{height: 300px; width: 300px; margin-top: 600px; margin-left:-510px;}
+		.col-42{height: 130px; width: 280px; margin: 100px -510px;}
+		.col-43{height: 400px; width: 400px; margin: -120px -510px;}
+		.col-44{height: 300px; width: 1300px; margin: 400px 200px;}
+		.col-45{height: 300px; width: 300px; margin: -300px 220px;}
+		.col-46{height: 130px; width: 400px; margin: 350px 230px;}
+		.col-47{height: 160px; width: 200px; margin: -850px 300px;}
+		.col-48{height: 300px; width: 300px; margin: 610px 515px;}
+		.col-49{height: 130px; width: 400px; margin: -550px 525px;}
+ 		.col-50{height: 160px; width: 200px; margin: -510px 820px;}
+ 		.col-51{height: 300px; width: 300px; margin: -250px 1025px;}
+		.col-52{height: 130px; width: 400px; margin: 310px 1030px;}
+		.col-53{height: 130px; width: 300px; margin: 200px 850px;}
+		.col-54{height: 240px; width: 190px; margin: -150px 580px;}
+		.col-55{height: 1500px; margin: 0px 0px;}
+		.col-56{height: 240px; width: 190px; margin: -230px 1100px;}
+		.col-57{height: 300px; width: 300px; margin: -400px 520px;}
+		.col-58{height: 130px; width: 300px; margin: 300px 400px;}
+		.col-59{height: 130px; width: 400px; margin-top: 460px; margin-left: 530px;}
+		.col-60{height: 300px; width: 300px; margin: 500px 1040px;}
+		.col-61{height: 130px; width: 300px; margin: -600px 920px;}
+		.col-62{height: 130px; width: 400px; margin-top: -450px; margin-left: 1040px;}
+		.col-63{height: 1000px; margin-top: 1650px;}
+ 		.col-64{height: 1000px; width: 1000px; margin: 0px 0px;}
+ 		.col-65{height: 450px; width: 700px; margin: -650px 1100px;}
+ 		.col-66{height: 5000px;  margin: 0px 0px;}
+ 		.col-67{height: 300px; width: 1500px; padding-top: 400px; margin-left: 200px;}
+ 		.col-68{height: 100px; width: 790px; margin-top: 370px; margin-left: 200px;}
+ 		.col-69{height: 900px; width: 960px; margin-top: 400px; margin-left: 817px;}
+ 		.col-70{height: 300px; width: 790px; margin-top: 0x; margin-left: 200px;}
+ 		.col-71{height: 460px; width: 570px; margin-top: 1150px; margin-left: 450px; display: inline-block;z-index: 0;}
+ 		.col-72{height: 100px; width: 790px; margin-top: -130px; margin-left: 990px;}
+ 		.col-73{height: 900px; width: 960px; margin-top: 1500px; margin-left: -900px; display: inline-block; z-index: 1;}
+ 		.col-74{height: 300px; width: 790px; margin-top: -20px; margin-left: 990px; display: }
+ 		.col-75{height: 100px; width: 790px; margin-top: -100px; margin-left: 200px;}
+ 		.col-76{height: 900px; width: 960px; margin-top: -100px; margin-left: 814px;}
+ 		.col-77{height: 300px; width: 790px; margin-top: 0x; margin-left: 200px;}
+		.col-78{height: 460px; width: 570px; margin-top: 650px; margin-left: 750px;}
+		.col-79{height: 1700px; margin: 0px 0px;}
+		.col-80{height: 200px; padding-top: 450px; margin-left: 200px;}
+		.col-81{height: 480px; width: 350px; margin-top: 200px; margin-left: 150px;}
+		.col-82{height: 100px; width: 500px; margin-top: -50px; margin-left: 150px;}
+		.col-83{height: 300px; width: 500px; margin-top: 0px; margin-left: 150px;}
+
+
+
+		.bg-section1{background: url(tkatlqdl.png);
+		background-size: 100% auto;
+		background-attachment: fixed;}
+		.bg-section2{background: url(tkatlqtka.png);
+		background-size: 100% auto;}
+		.bg-section3{background: url(tkatlqtk.png);
+		background-size: 100% auto;}
+		.bg-section4{background: url(tkatlqdh.png);
+		background-size: 100% auto;}
+		.bg-section5{background: url(tkatlqdbr.png);
+		background-size: 100% auto;}
+		.bg-section6{background: url(tkatlqclf.png);
+		background-size: 100% auto;}
+		.bg-section7{background: url(tkatlqttk.png);
+			background-size: 100% auto;}
+		.bg-section8{background: url(pointer.png);
+			background-size: 100% auto;}
+		.bg-section9{background: url(inmul1.png);
+			background-size: 100% auto;}
+		.bg-section10{background: url(phz.png);
+			background-size: 100% auto;}
+		.bg-section11{background: url(inmul2.png);
+			background-size: 100% auto;}
+		.bg-section12{background: url(pointer3.png);
+			background-size: 100% auto;}
+		.bg-section13{background: url(inmul3.png);
+			background-size: 100% auto;}
+		.bg-section14{background: url(pointer2.png);
+			background-size: 120% auto;}
+		.bg-section15{background: url(pointer4.png);
+			background-size: 120% auto;}
+		.bg-section16{background: url(inmul4.png);
+			background-size: 100% auto;}
+		.bg-section17{background: url(pointer5.png);
+			background-size: 100% auto;}
+		.bg-section18{background: url(inmul5.png);
+			background-size: 100% auto;}
+		.bg-section19{background: url(inmul6.png);
+			background-size: 100% auto;}
+		.bg-section20{background: url(inmul8.png);
+			background-size: 100% auto;}
+		.bg-section21{background: url(pointer6.png);
+			background-size: 100% auto;}
+		.bg-section22{background: url(inmul7.png);
+			background-size: 100% auto;}
+		.bg-section23{background: url(pointer8.png);
+			background-size: 100% auto;}
+		.bg-section24{background: url(pointer9.png);
+			background-size: 100% auto;}
+		.bg-section25{background: url(mo.png);
+			background-size: 100% auto;
+			background-attachment: fixed;
+			background-position-x: -500px;}
+		.bg-section26{background: url(samang.png);
+			background-size: 100% auto;
+			background-position-y: -120px;}
+		.bg-section27{background: url(grand.png);
+			background-size: 100% auto;}
+		.bg-section28{background: url(grand4.png);
+			background-size: 100% auto;}
+		.bg-section29{background: url(grand2.png);
+			background-size: 100% auto;}
+		.bg-section30{background: url(grand5.png);
+			background-size: 100% auto;}
+		.bg-section31{background: url(grand3.png);
+			background-size: 100% auto;}
+		.bg-section32{background: url(grand8.png);
+			background-size: 100% auto;
+			background-attachment: fixed;}
+
+
+		h1{margin: 0px 0px; font-weight:normal; font-style: normal; font-size: 5em; font-family: 'SBAggroB'}
+		h2{font-size: 1.5em; font-family: 'Noto Serif KR'; margin-top: 0px; font-weight: 600; line-height: 1.9;}
+		p{font-size: 1.7em; font-family: 'Noto Serif KR'; margin-top: 0px; font-weight: 700; line-height: 1.9;}
+
+		.rotate {
+  		transform: rotate(2deg);
+		}
+
+		@keyframes fadeInLeft{
+		from{left: -200px; opacity: 0%;}
+		to{left: 0px; opacity: 100%}
+	}
+
+	@keyframes fadeInRight{
+		from{right: 0px; opacity: 0%;}
+		to{right: 125px; opacity: 100%}}
+
+	@keyframes opacity{
+		from{opacity: 0%;}
+		to{opacity: 100%}
+	}
+
+
+	#a{animation-name: fadeInLeft; animation-duration: 1s; position: absolute; transition: ease-in;}
+
+		#c{animation-name: fadeInRight; animation-duration: 1s; position: absolute; transition: ease-in;}
+
+
+	#b{animation-name: opacity; animation-duration: 2s; position: absolute; transition: ease-in;}
+
+		</style>
+<body>
+	<section>
+		<div class="col-1 bg-black flex">
+		<div class="col-2 wrap"><h1 style="color: white;">깡통전세:</h1><h1 style="color: white;">만들어지는 과정</h1>
+		<div class="col-3 wrap"><p style="color:gray;">전셋집의 가치가 빈 깡통처럼 낮아 세입자가 전세금을 회수하기 어려운 경우</p></div>
+	</section>
+
+	<section>
+		<div class="col-25 bg-black">
+		<div class="col-4 wow" id="a"><p style="color: white;">:집주인은 신축빌라, 오피스텔 등</p><p style="color: white;">시세를 알기 어려운 매물의 가격을</p><p style="color: white;">세입자에게 시세의 150%정도 높여 속인다.</p></div></div>
+	</section>
+
+	<section>
+		<div class="col-5 bg-section1 flex">
+			<div class="col-6 bg-section2">
+			<div class="col-7 bg-section4"></div>
+			<div class="col-26 bg-black"><p style="text-align: center; color: white;">시세 1억</p><p style="text-align: center; color: white;">거래가 1억 5천</p>
+
+			<div class="col-27 bg-section7"></div>
+			<div class="col-28 bg-section4"></div>
+			<div class="col-29 bg-black"><p style="text-align: center; color: white;">시세 2억</p><p style="text-align: center; color: white;">거래가 3억</p></div></div></div></div></div>
+	</section>
+
+	<section>
+		<div class="col-30 bg-black flex">
+		<div class="col-31 bg-section8">
+
+		<div class="col-10 bg-section10" id="scale"></div>
+		<div class="col-11 bg-section9"></div>
+		<div class="col-12">
+		<p style="color:white;">세입자</p></div>
+
+		<div class="col-33 bg-section11" id="scale"></div>
+		<div class="col-34 bg-black">
+		<p style="color: white;">건축주</p><div>
+		<div class="col-34">
+		<p style="color: white;">:원하는 매매가 1억</p></div>
+
+		<div class="col-35 bg-section12"></div>
+		<div class="col-39 bg-section14"></div>
+
+		<div class="col-36 bg-section13" id="scale"></div>
+		<div class="col-37 bg-black">
+		<p style="color: white;">집주인</p><div>
+		<div class="col-38">
+		<h2 style="color: gray;" class="wow" id="b">:건축주가 원하는 매매가 1억(예시)에<br>전세가격을 맞춰 세입자와 1억원짜리 <br> 계약을 한다. 이후 명의대여자에게 집을<br> 넘긴다. 이것이 전세와 매매가 동시에 <br> 이루어지는 일명 '동시진행'이다. <br>집주인은 세입자에게 전세보증금 <br> 받는 동시에 공모자들과 보증금을 나눈다.</p></div>
+
+		<div class="col-40 bg-section15"></div>
+		
+		<div class="col-41 bg-section16" id="scale"></div>
+		<div class="col-42 bg-black">
+		<p style="color: white;">명의대여자</p></div>
+		<div class="col-43">
+		<h2 style="color: gray;" class="wow" id="b">: 대부분의 명의대여자는 계약을 치뤘던<br>전세보증금을 돌려줄 돈이 없으나, <br> 세입자의 전세보증금을 돌려막기하며<br> 빌라를 무한히 살 수는 있다.</h2></div>
+
+		<img src="what2.png" style="position: absolute; z-index: 1; margin: -120px -1700px;" clas="wrap">
+
+	</section>
+
+	<section>
+		<div class="col-44">
+		<h1>이런 일이 발생 할 수 있는 이유</h1>
+		<h1 style="color: #FFB43C; margin-top: 20px;" class="wow" id="b">공모자</h1></div>
+	</section>
+
+	<section>
+		<div class="col-45 bg-section11" id="scale"></div>
+		<div class="col-46">
+		<p>건축주</p><div>
+		<div class="col-46" style="margin-top: 0px; margin-left: 0px;">
+		<h2 style="color:gray;">자신이 받을 돈에 분양대행업자에게
+		<br>줄 뒷돈을 미리 얹어 분양가를 정한다.<h2></div>
+
+		<div class="col-47 bg-section17"></div>
+
+		<div class="col-48 bg-section18" id="scale"></div>
+		<div class="col-49">
+		<p>분양 대행업자</p></div>
+		<div class="col-49" style="margin-top: 510px;">
+		<h2 style="color:gray;">중개업자와 컨설팅업자들에게 이걸
+		<br>알려준다.<br>컨설팅 수수료, 영업비를 제외하고도 8% 정도의 수익을 가진다.</h2></div>
+
+		<div class="col-50 bg-section17" style="margin-top:40px;"></div>
+
+		<div class="col-53 bg-section20" id="scale"></div>
+		<div class="col-51 bg-section19"></div>
+		<div class="col-52">
+		<p>중개업자</p></div>
+		<div class="col-52" style=" margin-top: -350px;">
+		<h2 style="color:gray;">명의대여자(바지사장)를 구해와서<br>세입자와 전세 게약을 맺는다.<br>매물을 세입자에게 소개시켜준<br> 대가로 세입자 전세 보증금에 포함된 돈을 5% 이상 받는다.</h2></div>
+
+		<div class="col-54 bg-section21"></div>
+		<div class="col-56 bg-section23"></div>
+
+		<div class="col-58 bg-section20" id="scale"></div>
+		<div class="col-57 bg-section22"></div>
+		<div class="col-59">
+		<p>컨설팅업체</p></div>
+		<div class="col-59" style="margin-top: -50px;">
+		<h2 style="color:gray; margin-top:0px;">큰 판을 짠 이들.<br>명의대여자를 바지사장으로<br> 내세우며, 1억 5천의 전세금 중<br> 5천만원을 공모자들과 나눴다면,<br> 이들이 1억원의 전세금을 가지게 <br>된다. <br>명의대여자가 많은 돈을 가진 것처럼<br>보이지만 이들이 이익의 대부분을<br>챙긴다.</h2></div>
+
+		<div class="col-61 bg-section20" id="scale"></div>
+		<div class="col-60 bg-section16"></div>
+		<div class="col-62">
+		<p>명의대여자</p></div>
+		<div class="col-62" style="margin-top: 100px;">
+		<h2 style="color:gray; margin-top: -140px;">건축주가 세입자와의 전세계약 직후<br>집의 명의를 명의대여자에게 넘길 때<br>명의대여자는 영업비 명목으로<br>1%~1.5%의 수수료를 받는다.</h2></div>
+		
+		<div class="col-55 flex"></div>
+
+		<img src="white.png" style="position: absolute; z-index: 1; margin: -1300px -600px;" class="wrap">
+
+		</section>
+
+		<section>
+		<div class="col-63 bg-black">
+			<div class="col-64 bg-section25"></div>
+			<div class="col-64 bg-section26" style="margin-top: -1000px;"></div>
+			<div class="col-65 wow" id="b" style="color: white;">
+				<p>명의대여자는 여기서 받은 영업비를 <br>흥청망청 쓰지만, 집을 많이 살수록<br>부동산관련세금이 쌓이게 된다.<br>보증금은 이미 공모자들이 나눠먹어<br>돌려 받지 못하고, 명의대여자가<br>사망하면서 쌓인 세금을 내지 못하게 되어<br>
+			깡통전세가 터지게 된다.</p></div></div>
+		</section>
+
+<section>
+	<div class="col-66 bg-black">
+		<div class="col-67"><h1 style="color: white;">깡통전세 수법의 위험성</h1>
+		<div class="col-66" style="margin-top: 100px;">
+		<p style="color:gray;">: 청년 세입자는 특히 조심해야 한다. 보증금 사기의 피해자 3명 중 2명은 2030의 청년층이다.<br>
+      게다가 전세사기라고 명명하고는 있지만 전세사기의 유형들이 전부 사기죄에는 해당하지 않는다.</p>
+	</div></div>
+
+	<div class="col-68 wow" id="a">
+		<p style="color: white;">알고도 당한다</p></div>
+	<div class="col-70" style="margin-top: 470px;" class="wow" id="a">
+		<h2 style="color:gray;">피해자들은 ‘전세 사기를 피할 방법은 없었다’고 말한다.<br>
+		그럼에도 피해자들이 당하는 이유는 같은 날 전세와 매매 계약이 <br>이루어지는 '동시 진행" 때문이다.</h2></div>
+ 	<div class="col-69 bg-section27 wow wrap" id="c"></div>
+
+	<div class="col-71 bg-section28"></div>
+
+	<div class="col-72 wow" id="c">	
+		<p style="color: white;">협박</p></div>
+	<div class="col-73 bg-section29 wow" id="b"></div>
+ 	<div class="col-74 wrap wow" id="c">
+ 		<h2 style="color:gray;">압류가 들어오기 시작하면 수천만원을 얹어 집을 사라고 말한다. <br>
+경매로 넘어간 집은 낙찰이 된다고 해도 경매 비용과 체납 <br>세금까지 세입자가 내야하며, 이 과정에서 세입자들은 신용불량이<br> 될 위기에 까지 처하게 된다.
+</h2>
+ 	</div>
+
+ 	<div class="col-78 bg-section30"></div>
+
+ 		<div class="col-75 wow" id="a">
+		<p style="color: white;" style="text-align: right;">전세 사고 등에 대비해 보증보험에 가입한<br> 세입자들조차 돈을 못 받고 있다</p></div>
+	<div class="col-77 wow" style="margin-top:80px;" id=a>
+		<h2 style="color:gray;">‘세입자들이 집주인과 계약을 해지하면’ 주택 도시보증공사<br> 허그에서 전세금을 세입자에게 주고 나중에 허그가<br> 세입자 대신 집주인에게 돈을 청구하는 시스템이다. <br>
+‘김대성’사건의 경우 집주인이 사망했으니 세입자가 계약 해지를<br> 못 하게 되는데,
+가족 중 아무도 상속을 받으려 하지 않기 때문에<br> 상속 기간이 2년 이상으로 길어질 것으로 보인다.
+</h2></div>
+ 	<div class="col-76 bg-section31 wow" id="c"></div>
+</section>
+
+<section>
+<div class="col-5 bg-section32">
+	<div class="col 75 wow" style="padding-top: 100px; margin-left: 200px;" id="b"><p style="color:white;">전세보증보험제도의 역설</p>
+<h2 style="color: lightgray;">새입자들의 보호를 확대하겠다며 시세가 1억일 때 1억짜리 보증보험을 해준다는 식으로 <br>
+매매가 대비 보증을 100%로 올렸다. <br>
+ 보증금을 악용하는 사기 집단은 전세보증보험제도로 세입자들을 안심시킨 후 사기를 친다.
+</h2>
+	<div class="col 75" style="margin-top: 100px; margin-left: 300px;"><p style="color:red; font-weight: 900; font-size: 2em;" id="scale">하지만 사기를 보증해주거나 막을 수 있는 방법은 어디에도 없다.</p></div>
+</div></div>
+</section>
+
+<section>
+	<div class="col-79 bg-black">
+		<div class="col-80"><h1 style="color: white;">이외의 다양한 전세사기</h1></div>
+
+<div class="col-81">
+<iframe width="480" height="350" margin-top="300" margin-left="200" src="https://www.youtube.com/embed/VqdOXDq0vXA?start=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+<div class="col-82" style="margin-left:150px;">
+	<p style="color:white;">이중계약</p></div>
+	<div class="col-83">
+		<h2 style="color: gray;">대리인이 임차인과 전·월세 계약을 이중으로<br>맺은 뒤, 보증금을 가로채는 수법</h2></div>
+
+<div class="col-81" style="margin-left: 670px; margin-top: -830px;">
+<iframe width="480" height="350" src="https://www.youtube.com/embed/AU1d8iRY7Xs?start=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+<div class="col-82" style="margin-left: 670px;">
+	<p style="color:white;">신탁사기</p></div>
+	<div class="col-83" style="margin-left: 670px;">
+		<h2 style="color: gray;">신탁등기된 매물을 ‘저렴한 매물’로 가장해 <br>경제사정이 넉넉지 않은 세입자를 끌어들이는 <br>경우 </h2></div>
+
+<div class="col-81" style="margin-left: 1200px; margin-top: -830px;">
+<iframe width="480" height="350" src="https://www.youtube.com/embed/NIG2MVbWCxw?start=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share wrap" allowfullscreen></iframe></div>
+
+<div class="col-82 wrap" style="margin-left: 1200px;">
+	<p style="color:white;">다수의 세입자와 계약</p></div>
+	<div class="col-83 wrap" style="margin-left: 1200px;">
+		<h2 style="color: gray;">계약 전에는 타인의 임대차 사실을 알기 <br>어려운 맹점을 노려 집 한채를 여러 세입자와 계약 </h2></div>
+
+
+	</div>
+</section>
+
+<script src="WOW.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+</body>
+</html>

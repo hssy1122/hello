@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>천빌라</title>
+<link rel="stylesheet" href="css/animate.css">
+</head>
+<style>
+
+.wrap{width: 1000px; margin:auto;}
+	html{font-family: 'Noto Serif KR', serif; scroll-behavior: smooth;}
+		body, header, html,section {margin:0;}
+		.flex {display: flex;}
+		.bg-blue{background-color: blue;}
+		.bg-red{background-color: red;}
+		.bg-yellow{background-color: yellow;}
+		.bg-gray{background-color: gray}
+		.bg-black{background-color: black;}
+
+		@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+	.a2 {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 80px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    margin-top: -20px;
+    background-color: black;}
+
+    .a2:hover{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 80px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: black;
+    margin-top: -20px;
+    background: white;
+	transition: all 0.2s;}
+
+
+
+	
+		.col-1{height: 96px; width: 800px; margin: 300px 200px;}
+		.col-2{height: 96px; width: 800px; margin: 800px 800px;}
+		.col-3{height: 100px; width: 390px; margin: 1300px 200px;}
+		.col-4{height: 100px; width: 800px; margin: 1800px 800px;}
+		.col-5{height: 800px; margin: 0px 0px;}
+		.col-6{height: 180px; margin: px 0px; margin-top: 600px;}
+		.col-7{height: 400px; width:900px; margin: 0px 200px; margin-top: 400px;}
+		.col-8{height: 500px; margin: 0px 0px;}
+		.col-9{height: 2500px; margin: 0px 0px;}
+		.col-10{height: 1800px; margin: 0px 0px;}
+		.col-11{height: 650px; width: 1400px; margin: 400px 180px;}
+		.col-12{height: 1400px; margin: -800px 0px;}
+		.col-13{height: 600px; width: 600px; margin: -500px 850px;}
+		.col-14{height: 180px; width: 1500px; margin: 800px 270px; }
+		.col-15{height: 80px; margin-top: 0px; width: 1350px;display: inline-block; padding-top: 45px; margin-left: 200px;}
+		.col-16{height: 300px; margin: 0px 0px; padding-left: 80px;}
+		.col-17{height: 500px; margin: 0px 0px;}
+
+		.bg-section1{background: url(dltlq.png);
+		background-size: 100% auto;}
+		.bg-section2{background: url(dltlqdlf.png);
+		background-size: 100% auto;}
+		.bg-section3{background: url(dltlqdl.png);
+		background-size: 100% auto;}
+		.bg-section4{background: url(dltlqtka.png);
+		background-size: 100% auto;}
+		.bg-section5{background: url(dltlqdbr.png);
+		background-size: 100% auto;}
+		.bg-section6{background: url(tkatlq.png);
+		background-size: 110% auto;
+		background-position-x: -10px;}
+		.bg-section7{background: url(tkatlqdlf.png);
+		background-size: 100% auto;
+		background-attachment: fixed;}
+
+	@keyframes fadeInLeft{
+		from{left: -200px; opacity: 0%;}
+		to{left: 0px; opacity: 100%}
+	}
+
+	@keyframes fadeInRight{
+		from{right: -875px; opacity: 0%;}
+		to{right: -625px; opacity: 100%}
+	}
+
+	@keyframes fadeIn{
+		from{margin-top: 600px; opacity: 0%;}
+		to{margin-top: 400px; opacity: 100%}
+	}
+
+	@keyframes shake{0%{transform: translate(1px, 1px);}
+		20%{transform: translate(-1px, -1px);}
+		40%{transform: translate(3px,2px)}
+		60%{transform: translate(-2px, -2px);}
+		80%{transform: translate(1px,1px);}
+		100%{transform: translate(-3px,-2px);}
+	}
+
+	#a{animation-name: fadeInLeft; animation-duration: 1s; position: absolute; transition: ease-in;}
+
+	#b{animation-name: fadeInRight; animation-duration: 1s; position: absolute; transition: ease-in;}
+
+	#c{animation-name: fadeIn; animation-duration: 1.5s; position: absolute; transition: ease-in;}
+	
+
+	#d{animation: shake 1.5s; animation-iteration-count: infinite;}
+
+
+		h1{margin: 0px 0px; font-weight:normal; font-style: normal; font-size: 10em; font-family: 'SBAggroB'}
+		p{font-size: 2em; font-family:'Noto Serif KR'; line-height: 1.9;}
+		h2{font-size: 1.5em; font-weight:500; font-family: 'Noto Serif KR'; margin-top: -10px;}
+		h3{ font-size: 5em; font-weight:normal; font-family: 'SBAggroB'; margin-top: -10px;}
+
+</style>
+
+<body>
+
+<section>
+	<div class="col-9 flex bg-black">
+		<div class="col-1 bg-section1 wow" id="a"></div>
+		<div class="col-2 bg-section2 wow" id="b"></div>
+		<div class="col-3  bg-section4 wow" id="a"></div>
+		<div class="col-4 bg-section3 wow" id="b"></div>
+	</div>
+</section>
+
+<section>
+	<div class="col-5 bg-section7"></div>
+</section>
+
+<section>
+	<div class="col-10 bg-black flex">
+		<div class="col-11 bg-section6 wow" id="c"></div></div>
+</section>
+
+<section>
+	<div class="col-12 bg-black">
+		<div class="col-6"><h1 style="text-align: center; color: white;"> 천빌라 김대성</h1></div>
+		<div class="col-7"><p style="color:white;">서울과 수도권 등에 주택 1,100채를 '갭투기'로 사들인 뒤</p><p style="color:white;">전세를 내어 놓았으나 집 값이 떨어지고 부채를 감당하지</p><p style="color:white;">못하자 전세금을 돌려주지 못하게 되었고,</p><p style="color:white;">지병으로 숨지며 수백 명의 전세사기 피해자를 낳게 되었다.</p>
+			<div class="col-13 bg-section5" id="d"></div>
+		</div></div>
+</section>
+
+<section>
+<div class="col-17 bg-black">
+	<div class="col-14"><h3 style=" color: white;">어떻게 이런 일이 벌어질 수 있었을까?</h3></div></div>
+
+<section>
+	<div class="col-16 bg-black">
+	<a href="hello4.html"><div class="col-15 a2"><p style="margin-top: -30px;">알아보러 가기</p></div></div>
+</section>
+
+<script src="WOW.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+
+</body>
+</html>
